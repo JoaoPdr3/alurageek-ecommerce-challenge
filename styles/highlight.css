@@ -1,0 +1,51 @@
+.highlight {
+  width: 100%;
+  height: 50vh;
+  background-color: hsl(22, 100%, 70%);
+  margin-top: 32px;
+}
+
+.highlight-bg {
+  background-image: url(../assets/imgs/highlight.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.highlight-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.highlight-title {
+  font-size: 3.25rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.highlight-text {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.highlight-btn {
+  display: inline-block;
+  width: 8.25rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: hsl(22, 90%, 51%);
+  color: white;
+  transition: background .3s;
+}
+
+.highlight-btn:hover {
+  background-color: hsl(22, 100%, 60%);
+}
