@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/highlight.css">
   <link rel="stylesheet" href="styles/products.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <!-- || Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -220,8 +221,50 @@
         </div>
       </section>
     </section>
-
   </main>
+  <footer>
+    <div class="footer-container">
+      <header>
+        <img src="assets/svgs/logo.svg" alt="Logo AluraGeek">
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Quem somo nós</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Programa fidelidade</a></li>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Quero ser franqueado</a></li>
+          <li><a href="#">Anuncie aqui</a></li>
+        </ul>
+      </nav>
+      <form>
+        <fieldset>
+          <legend>Fale conosco</legend>
+          <div>
+            <input type="text" id="user-name" placeholder="Nome">
+            <label for="user-name">
+              <span class="hidden">Nome</span>
+            </label>
+          </div>
+          <div>
+            <input type="email" id="user-email" placeholder="E-mail">
+            <label for="user-email">
+              <span class="hidden">E-mail</span>
+            </label>
+          </div>
+          <div>
+            <textarea id="user-msg" placeholder="Escreva sua mensagem"></textarea>
+            <label for="user-msg">
+              <span class="hidden">Escreva sua mensagem</span>
+            </label>
+          </div>
+          <div>
+            <button type="submit">Enviar mensagem</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
 </body>
 
 </html>
