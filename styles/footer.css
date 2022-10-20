@@ -1,143 +1,27 @@
-footer {
-  background-color: hsla(22, 100%, 70%, 0.281);
-  margin-top: 4rem;
-  min-height: 40vh;
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
-footer header {
-  display: initial;
-  margin: 0;
-  padding: 0;
-  width: auto;
-}
-
-footer ul {
-  list-style: none;
+.footer {
+  background-color: hsla(22, 100%, 70%, 0.329);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
-footer a {
-  color: #464646;
-}
-
-.footer-container {
+.footer-info {
   display: flex;
-  gap: 5rem;
-  width: 80%;
-  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
 }
 
-footer form {
-  width: 55%;
-}
-
-footer fieldset {
-  border: none;
-}
-
-
-footer legend {
-  font-weight: 700;
-  margin-bottom: .5rem;
-  color: #464646;
-}
-
-footer input,
-footer textarea {
-  width: 100%;
-  font-size: 1rem;
-  resize: none;
-  border: none;
+.footer-logo {
+  width: 8.5rem;
   margin-bottom: 1rem;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  box-shadow: 0px 1px 0px #00000044;
 }
 
-footer input {
-  padding: 1.8rem 1rem 0.6rem;
+.footer-nav-info ul li {
+  margin-bottom: 1rem;
 }
 
-footer input::placeholder {
-  color: transparent;
-}
-
-footer textarea {
-  padding: 1.9rem 1.1rem 0.7rem;
-}
-
-footer textarea::placeholder {
-  color: transparent;
-}
-
-footer label {
-  display: block;
-  position: relative;
-  pointer-events: none;
-}
-
-footer label[for="user-name"]::before {
-  content: "Nome";
-}
-
-footer label[for="user-email"]::before {
-  content: "E-mail";
-}
-
-footer label[for="user-msg"]::before {
-  content: "Escreva sua mensagem";
-}
-
-footer label[for="user-name"]::before,
-footer label[for="user-email"]::before {
-  position: absolute;
-  top: -2.8rem;
-  left: 1rem;
-  color: #A2A2A2;
-  transition: top .3s;
-}
-
-footer label[for="user-msg"]::before {
-  position: absolute;
-  top: -5.1rem;
-  left: 1rem;
-  color: #A2A2A2;
-  transition: top .3s;
-}
-
-footer textarea:focus+label::before,
-footer textarea:not(:placeholder-shown)+label::before {
-  top: -6.6rem;
-  font-size: 14px;
-}
-
-footer input:focus+label::before,
-footer input:not(:placeholder-shown)+label::before {
-  top: -4.2rem;
-  font-size: 14px;
-}
-
-
-.hidden {
-  visibility: hidden;
-}
-
-
-footer button {
-  background-color: hsl(22, 90%, 51%);
-  border: none;
-  font-size: 1rem;
-  height: 51px;
-  padding: 0 16px;
-  color: white;
-  cursor: pointer;
-  transition: background .3s;
-}
-
-footer button:hover {
-  background-color: hsl(22, 100%, 60%);
+.footer-nav-info li a {
+  font-size: 0.875rem;
+  color: #464646;
+  font-weight: 500;
 }

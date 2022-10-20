@@ -1,8 +1,6 @@
 .highlight {
-  width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-color: hsl(22, 100%, 70%);
-  margin-top: 32px;
 }
 
 .highlight-bg {
@@ -18,28 +16,27 @@
 }
 
 .highlight-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 32px;
+  padding: 1rem;
 }
 
 .highlight-title {
-  font-size: 3.25rem;
+  font-size: 1.375rem;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: .5rem;
 }
 
 .highlight-text {
-  font-size: 1.375rem;
-  font-weight: 700;
+  font-size: 0.875rem;
+  font-weight: 500;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: .5rem;
 }
 
 .highlight-btn {
   display: inline-block;
-  width: 8.25rem;
-  padding: 1rem;
+  font-size: 0.875rem;
+  width: 7.4375rem;
+  padding: .75rem;
   text-align: center;
   background-color: hsl(22, 90%, 51%);
   color: white;
