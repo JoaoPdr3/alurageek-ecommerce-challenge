@@ -23,15 +23,17 @@
       </a>
     </div>
     <div class="header__container">
-      <a class="header__link" href="#">Login</a>
+      <a class="header__button" href="#">Login</a>
     </div>
     <div class="header__container">
-      <a class="header__link" href="#""></a>
+      <a class="header__link" href="#"">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
     </div>
   </header>
   <main class="main">
     <section class="section-featured">
-      <div class="section-featured__container section-featured__container--bg">
+      <div class="section-featured__container--bg">
         <div class="section-featured__content">
           <h2 class="section-featured__title">Outubro Promocional</h2>
           <p class="section-featured__text">Produtos selecionados com 33% de desconto</p>
@@ -40,13 +42,13 @@
       </div>
     </section>
     <section class="section-products">
-      <div class="section__container section__container--bg">
+      <div class="section-products__container--bg">
         <section class="section-products__content">
           <header class="section-products__header">
-            <h3 class="section-products__title">Star Wars</h3>
+            <h3 class="section-products__title">Destaques</h3>
             <a class="section-products__link" href="#">
               Ver tudo
-              <span class="section-products__icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
           <section class="section-products__featured">
@@ -78,10 +80,10 @@
         </section>
         <section class="section-products__content">
           <header class="section-products__header">
-            <h2 class="section-products__title">Consoles</h2>
+            <h3 class="section-products__title">Consoles</h3>
             <a class="section-products__link" href="#">
               Ver tudo
-              <span class="section-products__icon"><i class="fa-solid fa-arrow-right"></i></span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
           <section class="section-products__featured">
@@ -150,37 +152,39 @@
     </section>
   </main>
   <footer class="footer">
-          <div class="footer-info">
-            <img class="footer-logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
-            <nav class="footer-nav-info">
-              <ul>
-                <li><a href="#">Quem somos nós</a></li>
-                <li><a href="#">Política de privacidade</a></li>
-                <li><a href="#">Programa fidelidade</a></li>
-                <li><a href="#">Nossas lojas</a></li>
-                <li><a href="#">Quero ser franqueado</a></li>
-                <li><a href="#">Anuncie aqui</a></li>
-              </ul>
-            </nav>
-          </div>
-          <form action="">
-            <fieldset>
-              <legend>Fale conosco</legend>
-              <label for="user-name">
-                <i class="fa-solid fa-user"></i>
-              </label>
-              <input type="text" id="user-name" placeholder="Nome">
-              <label for="user-email">
-                <i class="fa-solid fa-envelope"></i>
-              </label>
-              <input type="email" id="user-email" placeholder="E-mail">
-              <label for="user-msg">
-                <i class="fa-solid fa-message msg"></i>
-              </label>
-              <textarea id="user-msg" placeholder="Digite sua mensagem"></textarea>
-              <button class="btn-form" type="submit">Enviar mensagem</button>
-            </fieldset>
-          </form>
+    <div class="footer-container">
+      <div class="footer-info">
+        <img class="footer-info__logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
+        <nav class="footer-info__nav">
+          <ul class="footer-info__list">
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Quem somos nós</a></li>
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Política de privacidade</a></li>
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Programa fidelidade</a></li>
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Nossas lojas</a></li>
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Quero ser franqueado</a></li>
+            <li class="footer-info__item"><a class="footer-info__link" href="#">Anuncie aqui</a></li>
+          </ul>
+        </nav>
+      </div>
+      <form class="message-form" action="">
+        <fieldset class="message-form__fieldset">
+          <legend class="message-form__legend">Fale conosco</legend>
+          <label class="message-form__label" for="user-name">
+            <i class="fa-solid fa-user"></i>
+          </label>
+          <input class="message-form__input" id="user-name" placeholder="Nome">
+          <label class="message-form__label" for="user-email">
+            <i class="fa-solid fa-envelope"></i>
+          </label>
+          <input class="message-form__input"  id="user-email" placeholder="E-mail">
+          <label class="message-form__label" for="user-msg">
+            <i class="fa-solid fa-message msg"></i>
+          </label>
+          <textarea class="message-form__textarea" id="user-msg" placeholder="Digite sua mensagem"></textarea>
+          <button class="message-form__button" type="submit">Enviar mensagem</button>
+        </fieldset>
+      </form>
+  </div>
   </footer>
 </body>
 
