@@ -5,178 +5,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AluraGeek | Encontre os melhores produtos geeks</title>
-  <!-- || Styles -->
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/menu.css">
-  <link rel="stylesheet" href="styles/highlight.css">
-  <link rel="stylesheet" href="styles/products.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <!-- || Fonts -->
+  <!--*Styles-->
+  <link rel="stylesheet" href="styles.css">
+  <!--*Fonts*-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- || Scripts -->
+  <!--*Scripts*-->
   <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <main>
-    <header class="menu wrapper">
-      <img class="menu-logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
-      <a class="menu-btn-login" href="#">Login</a>
-      <div class="menu-search">
-        <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
-      </div>
-    </header>
-    <section class="highlight wrapper">
-      <div class="highlight-bg">
-        <div class="highlight-wrapper">
-          <h1 class="highlight-title">Outubro Promocional</h1>
-          <p class="highlight-text">Produtos selecionados com 33% de desconto</p>
-          <a class="highlight-btn" href="#">Ver Consoles</a>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
+      </a>
+    </div>
+    <div class="header__container">
+      <a class="header__link" href="#">Login</a>
+    </div>
+    <div class="header__container">
+      <a class="header__link" href="#""></a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-featured">
+      <div class="section-featured__container section-featured__container--bg">
+        <div class="section-featured__content">
+          <h2 class="section-featured__title">Outubro Promocional</h2>
+          <p class="section-featured__text">Produtos selecionados com 33% de desconto</p>
+          <a class="section-featured__link" href="#">Ver Consoles</a>
         </div>
       </div>
     </section>
-    <section class="products wrapper">
-      <section class="products-list">
-        <header class="products-header">
-          <h2 class="products-title">Star Wars</h2>
-          <a class="products-more" href="#">
-            Ver tudo
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </header>
-        <section class="products-wrapper">
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-01.jpg" alt="Produto">
-            <span class="product-name">Produto XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-02.jpg" alt="Produto">
-            <span class="product-name">Produto XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-03.jpg" alt="Produto">
-            <span class="product-name">Produto XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-04.jpg" alt="Produto">
-            <span class="product-name">Produto XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
+    <section class="section-products">
+      <div class="section__container section__container--bg">
+        <section class="section-products__content">
+          <header class="section-products__header">
+            <h3 class="section-products__title">Star Wars</h3>
+            <a class="section-products__link" href="#">
+              Ver tudo
+              <span class="section-products__icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </header>
+          <section class="section-products__featured">
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-01.jpg" alt="Produto">
+              <span class="product__name">Produto XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-02.jpg" alt="Produto">
+              <span class="product__name">Produto XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-03.jpg" alt="Produto">
+              <span class="product__name">Produto XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-04.jpg" alt="Produto">
+              <span class="product__name">Produto XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+          </section>
         </section>
-      </section>
-      <section class="products-list">
-        <header class="products-header">
-          <h2 class="products-title">Consoles</h2>
-          <a class="products-more" href="#">
-            Ver tudo
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </header>
-        <section class="products-wrapper">
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-05.jpg" alt="Produto">
-            <span class="product-name">Controle XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-06.jpg" alt="Produto">
-            <span class="product-name">Console e Controle XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-07.jpg" alt="Produto">
-            <span class="product-name">Console XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-08.jpg" alt="Produto">
-            <span class="product-name">Controle XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
+        <section class="section-products__content">
+          <header class="section-products__header">
+            <h2 class="section-products__title">Consoles</h2>
+            <a class="section-products__link" href="#">
+              Ver tudo
+              <span class="section-products__icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </header>
+          <section class="section-products__featured">
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-05.jpg" alt="Produto">
+              <span class="product__name">Controle XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-06.jpg" alt="Produto">
+              <span class="product__name">Console e Controle XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-07.jpg" alt="Produto">
+              <span class="product__name">Console XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-08.jpg" alt="Produto">
+              <span class="product__name">Controle XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+          </section>
         </section>
-      </section>
-      <section class="products-list">
-        <header class="products-header">
-          <h2 class="products-title">Diversos</h2>
-          <a class="products-more" href="#">
-            Ver tudo
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </header>
-        <section class="products-wrapper">
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-09.jpg" alt="Produto">
-            <span class="product-name">Camisa Atari</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-10.jpg" alt="Produto">
-            <span class="product-name">Camisa SNES</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-11.jpg" alt="Produto">
-            <span class="product-name">Action Figure XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
-          <div class="product">
-            <img class="product-image" src="./assets/imgs/product-12.jpg" alt="Produto">
-            <span class="product-name">Produto XYZ</span>
-            <span class="product-value">R$ 60,00</span>
-            <a class="product-link" href="#">Ver produto</a>
-          </div>
+        <section class="section-products__content">
+          <header class="section-products__header">
+            <h3 class="section-products__title">Diversos</h3>
+            <a class="section-products__link" href="#">
+              Ver tudo
+              <span class="section-products__icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </header>
+          <section class="section-products__featured">
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-09.jpg" alt="Produto">
+              <span class="product__name">Camisa Atari</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-10.jpg" alt="Produto">
+              <span class="product__name">Camisa SNES</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-11.jpg" alt="Produto">
+              <span class="product__name">Action Figure XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+            <div class="product">
+              <img class="product__image" src="./assets/imgs/product-12.jpg" alt="Produto">
+              <span class="product__name">Produto XYZ</span>
+              <span class="product__value">R$ 60,00</span>
+              <a class="product__link" href="#">Ver produto</a>
+            </div>
+          </section>
         </section>
-      </section>
+      </div>
     </section>
   </main>
-  <footer class="footer wrapper">
-    <div class="footer-info">
-      <img class="footer-logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
-      <nav class="footer-nav-info">
-        <ul>
-          <li><a href="#">Quem somos nós</a></li>
-          <li><a href="#">Política de privacidade</a></li>
-          <li><a href="#">Programa fidelidade</a></li>
-          <li><a href="#">Nossas lojas</a></li>
-          <li><a href="#">Quero ser franqueado</a></li>
-          <li><a href="#">Anuncie aqui</a></li>
-        </ul>
-      </nav>
-    </div>
-    <form action="">
-      <fieldset>
-        <legend>Fale conosco</legend>
-        <label for="user-name">
-          <i class="fa-solid fa-user"></i>
-        </label>
-        <input type="text" id="user-name" placeholder="Nome">
-        <label for="user-email">
-          <i class="fa-solid fa-envelope"></i>
-        </label>
-        <input type="email" id="user-email" placeholder="E-mail">
-        <label for="user-msg">
-          <i class="fa-solid fa-message msg"></i>
-        </label>
-        <textarea id="user-msg" placeholder="Digite sua mensagem"></textarea>
-        <button class="btn-form" type="submit">Enviar mensagem</button>
-      </fieldset>
-    </form>
+  <footer class="footer">
+          <div class="footer-info">
+            <img class="footer-logo" src="./assets/svgs/logo.svg" alt="Logo AluraGeek.">
+            <nav class="footer-nav-info">
+              <ul>
+                <li><a href="#">Quem somos nós</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Programa fidelidade</a></li>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Quero ser franqueado</a></li>
+                <li><a href="#">Anuncie aqui</a></li>
+              </ul>
+            </nav>
+          </div>
+          <form action="">
+            <fieldset>
+              <legend>Fale conosco</legend>
+              <label for="user-name">
+                <i class="fa-solid fa-user"></i>
+              </label>
+              <input type="text" id="user-name" placeholder="Nome">
+              <label for="user-email">
+                <i class="fa-solid fa-envelope"></i>
+              </label>
+              <input type="email" id="user-email" placeholder="E-mail">
+              <label for="user-msg">
+                <i class="fa-solid fa-message msg"></i>
+              </label>
+              <textarea id="user-msg" placeholder="Digite sua mensagem"></textarea>
+              <button class="btn-form" type="submit">Enviar mensagem</button>
+            </fieldset>
+          </form>
   </footer>
 </body>
 
