@@ -68,7 +68,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #011936; /* *bg-primary */
+  background-color: #011936;
+  /* *bg-primary */
 }
 
 .logo-container {
@@ -92,6 +93,7 @@ h6 {
 }
 
 .main {
+  background-color: hsla(206, 17%, 92%, 0.219);
 }
 
 .footer {
@@ -129,8 +131,7 @@ h6 {
   font-weight: 500;
 }
 
-.message-form {
-}
+.message-form {}
 
 .message-form__fieldset {
   border: none;
@@ -316,7 +317,8 @@ h6 {
   gap: 4px;
 }
 
-.icon--width { /** Css modify default*/
+.icon--width {
+  /** Css modify default*/
   width: 0.75rem;
 }
 
