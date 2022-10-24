@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessar AluraGeek</title>
+  <!--*Fonts*-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito:wght@300;400;500&family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <!--*Styles*-->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../login-page.css">
+  <!--*Scripts*-->
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img class="logo--width" src="../assets/svgs/logo-login.svg" alt="logo alurageek">
+      </a>
+    </div>
+    <div class="menu-container">
+      <img class="menu--width" src="../assets/svgs/bars-solid.svg" alt="menu de navageção">
+    </div>
+  </header>
+  <main class="main">
+    <section class="login-container">
+      <form class="form" action="">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Fazer login</legend>
+          <label class="form__label" for="user-email-login">
+            E-mail ou número de telefone celular
+          </label>
+          <input class="form__input" type="text" id="user-email-login">
+          <label class="form__label" for="user-password-login">
+            Senha
+          </label>
+          <input class="form__input" type="password" id="user-password-login">
+          <input class="form__input--submit" type="submit" value="Fazer login">
+        </fieldset>
+      </form>
+    </section>
+    <div class="divider-line">
+      <h2 class="divider-line__title">
+        Não possui uma Conta?
+      </h2>
+    </div>
+    <section class="create-account-container">
+      <a class="create-account-container__btn" href="#">Criar sua conta</a>
+    </section>
+    <div class="divider-line-final"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-about">
+      <div class="footer-about__container">
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Quem somos nós</a>
+        </span>
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Política de privacidade</a>
+        </span>
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Programa fidelidade</a>
+        </span>
+      </div>
+      <div class="footer-about__container">
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Nossas lojas</a>
+        </span>
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Quero ser franqueado</a>
+        </span>
+        <span class="footer-info">
+          <a class="footer-info__link" href="">Anuncie aqui</a>
+        </span>
+      </div>
+      <span class="footer__copyright">&copy; 2022 AluraGeek, <a class="link-git" href="https://github.com/JoaoPdr3"
+          target="_blank">JoaoPdr3</a></span>
+    </div>
+  </footer>
+</body>
+
+</html>
