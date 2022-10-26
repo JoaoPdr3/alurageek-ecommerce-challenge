@@ -14,6 +14,7 @@
   <!--*Styles*-->
   <link rel="stylesheet" href="styles.css">
   <!--*Scripts*-->
+  <script src="main.js" defer></script>
 </head>
 
 <body class="page">
@@ -23,11 +24,24 @@
         <img class="logo--width" src="./assets/svgs/logo.svg" alt="logo alurageek">
       </a>
     </div>
-    <!-- !link test -->
-    <a href="./pages/login-page.html">Login</a>
+    <!-- !link test
+    <a href="./pages/login-page.html">Login</a> -->
     <div class="menu-container">
-      <img class="menu--width" src="./assets/svgs/bars-solid.svg" alt="menu de navageção">
+      <div class="menu-container__content">
+        <div class="menu-login">
+          <a class="menu-login__btn" href="./pages/login-page.html">Faça seu login</a>
+          <h3 class="menu-login__info">
+            Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
+          </h3>
+        </div>
+      </div>
     </div>
+    <button class="menu-open" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
+      <img class="menu-open--width" src="./assets/svgs/bars-solid.svg" alt="abrir menu de navageção">
+    </button>
+    <button class="menu-close" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
+      <img class="menu-close--width" src="./assets/svgs/xmark-solid.svg" alt="fechar menu de navegação">
+    </button>
   </header>
   <main class="main">
     <section class="section-featured">
