@@ -9,77 +9,96 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-  rel="stylesheet">
   <!--*Styles*-->
   <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="../login-page.css">
+  <link rel="stylesheet" href="../styles/login-page.css">
   <!--*Scripts*-->
+  <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="page">
-  <header class="header">
-    <div class="logo-container">
-      <a href="../index.html">
-        <img class="logo--width" src="../assets/svgs/logo-login.svg" alt="logo alurageek">
-      </a>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img class="logo--width" src="../assets/svgs/logo-alternative.svg" alt="logo alurageek">
+        </a>
+      </div>
+      <div class="menu-container">
+        <div class="menu-container__content">
+          <div class="menu-login">
+            <a class="menu-login__btn" href="../pages/login-page.html">Faça seu login</a>
+            <h3 class="menu-login__info">
+              Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark fa-lg"></i>
+      </button>
     </div>
-    <button class="menu-open" aria-expanded="false" aria-label="Abrir menu">
-      <img class="menu-open--width" src="../assets/svgs/bars-solid.svg" alt="abrir menu de navageção">
-    </button>
   </header>
-  <main class="main">
-    <section class="login-container">
-      <form class="form" action="">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Fazer login</legend>
-          <label class="form__label" for="user-email-login">
-            E-mail ou número de telefone celular
-          </label>
-          <input class="form__input" type="text" id="user-email-login">
-          <label class="form__label" for="user-password-login">
-            Senha
-          </label>
-          <input class="form__input" type="password" id="user-password-login">
-          <input class="form__input--submit" type="submit" value="Fazer login">
-        </fieldset>
-      </form>
-    </section>
-    <div class="divider-line">
-      <h2 class="divider-line__title">
-        Não possui uma Conta?
-      </h2>
+  <main>
+    <div class="wrapper">
+      <section class="login-container">
+        <form class="form" action="">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Fazer login</legend>
+            <label class="form__label" for="user-email-login">
+              E-mail ou número de telefone celular
+            </label>
+            <input class="form__input" type="text" id="user-email-login">
+            <label class="form__label" for="user-password-login">
+              Senha
+            </label>
+            <input class="form__input" type="password" id="user-password-login">
+            <input class="form__input--submit" type="submit" value="Fazer login">
+          </fieldset>
+        </form>
+      </section>
+      <div class="divider-line">
+        <h2 class="divider-line__title">
+          Não possui uma Conta?
+        </h2>
+      </div>
+      <section class="create-account-container">
+        <a class="create-account-container__btn" href="#">Criar sua conta</a>
+      </section>
+      <div class="divider-line-final"></div>
     </div>
-    <section class="create-account-container">
-      <a class="create-account-container__btn" href="#">Criar sua conta</a>
-    </section>
-    <div class="divider-line-final"></div>
   </main>
-  <footer class="footer">
-    <div class="footer-about">
-      <div class="footer-about__container">
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Quem somos nós</a>
-        </span>
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Política de privacidade</a>
-        </span>
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Programa fidelidade</a>
-        </span>
+  <footer>
+    <div class="wrapper">
+      <div class="about">
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Quem somos nós</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Política de privacidade</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Programa fidelidade</a>
+          </span>
+        </div>
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Nossas lojas</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Quero ser franqueado</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Anuncie aqui</a>
+          </span>
+        </div>
+        <span class="copyright">&copy; 2022 AluraGeek, by <a class="copyright__link" href="https://github.com/JoaoPdr3"
+            target="_blank">JoaoPdr3</a></span>
       </div>
-      <div class="footer-about__container">
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Nossas lojas</a>
-        </span>
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Quero ser franqueado</a>
-        </span>
-        <span class="footer-info">
-          <a class="footer-info__link" href="">Anuncie aqui</a>
-        </span>
-      </div>
-      <span class="footer__copyright">&copy; 2022 AluraGeek, <a class="link-git" href="https://github.com/JoaoPdr3"
-          target="_blank">JoaoPdr3</a></span>
     </div>
   </footer>
 </body>
