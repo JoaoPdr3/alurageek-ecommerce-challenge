@@ -12,181 +12,178 @@
   <!--*Styles*-->
   <link rel="stylesheet" href="styles.css">
   <!--*Scripts*-->
+  <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
   <script src="main.js" defer></script>
 </head>
 
-<body class="page">
-  <header class="header">
-    <div class="logo-container">
-      <a href="index.html">
-        <img class="logo--width" src="./assets/svgs/logo.svg" alt="logo alurageek">
-      </a>
-    </div>
-    <div class="menu-container">
-      <div class="menu-container__content">
-        <div class="menu-login">
-          <a class="menu-login__btn" href="./pages/login-page.html">Faça seu login</a>
-          <h3 class="menu-login__info">
-            Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
-          </h3>
+<body>
+  <header id="home">
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo--width" src="./assets/svgs/logo.svg" alt="logo alurageek">
+        </a>
+      </div>
+      <div class="menu-container">
+        <div class="menu-container__content">
+          <div class="menu-login">
+            <a class="menu-login__btn" href="./pages/login-page.html">Faça seu login</a>
+            <h3 class="menu-login__info">
+              Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
+            </h3>
+          </div>
         </div>
       </div>
+      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark fa-lg"></i>
+      </button>
     </div>
-    <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
-      <img class="menu-open--width" src="./assets/svgs/bars-solid.svg" alt="abrir menu de navageção">
-    </button>
-    <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
-      <img class="menu-close--width" src="./assets/svgs/xmark-solid.svg" alt="fechar menu de navegação">
-    </button>
   </header>
-  <main class="main">
-    <section class="section-featured">
-      <div class="section-featured__container">
-        <div class="section-featured__content">
-          <h2 class="section-featured__title">Outubro Promocional</h2>
-          <p class="section-featured__text">Produtos selecionados com 33% de desconto</p>
-          <a class="section-featured__link" href="#">Ver consoles</a>
+  <main>
+    <section class="banner-highlight">
+      <div class="banner-highlight__container">
+        <div class="wrapper">
+          <div class="banner-highlight__content">
+            <h2 class="banner-highlight__title">Outubro Promocional</h2>
+            <p class="banner-highlight__info">Produtos selecionados com 33% de desconto</p>
+            <a class="banner-highlight__btn" href="#">Ver consoles</a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section-products">
-      <div class="section-products__container">
-        <section class="section-products__content">
-          <header class="section-products__header">
-            <h3 class="section-products__title">Destaques</h3>
-            <a class="section-products__link" href="#">
+    <section class="products">
+      <div class="wrapper">
+        <div class="products__content">
+          <header class="products__header">
+            <h3 class="products__title">Destaques</h3>
+            <a class="products__link" href="#">
               Ver tudo
-              <img class="icon--width" src="./assets/svgs/arrow-right-solid.svg" alt="ícone de seta para direita">
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
-          <section class="section-products__featured">
+          <div class="products__list">
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-01.jpg" alt="Produto">
               <span class="product__name">Produto XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-02.jpg" alt="Produto">
               <span class="product__name">Produto XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-03.jpg" alt="Produto">
               <span class="product__name">Produto XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
-            <div class="product">
+            <!-- <div class="product">
               <img class="product__image" src="./assets/imgs/product-04.jpg" alt="Produto">
               <span class="product__name">Produto XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
-            </div>
-          </section>
-        </section>
-        <section class="section-products__content">
-          <header class="section-products__header">
-            <h3 class="section-products__title">Consoles</h3>
-            <a class="section-products__link" href="#">
+            </div> -->
+          </div>
+        </div>
+        <div class="products__content">
+          <header class="products__header">
+            <h3 class="products__title">Consoles</h3>
+            <a class="products__link" href="#">
               Ver tudo
-              <img class="icon--width" src="./assets/svgs/arrow-right-solid.svg" alt="ícone de seta para direita">
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
-          <section class="section-products__featured">
+          <div class="products__list">
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-05.jpg" alt="Produto">
               <span class="product__name">Controle XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-06.jpg" alt="Produto">
-              <span class="product__name">Console e Controle XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__name">Console XYZ</span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-07.jpg" alt="Produto">
               <span class="product__name">Console XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
-            <div class="product">
+            <!-- <div class="product">
               <img class="product__image" src="./assets/imgs/product-08.jpg" alt="Produto">
               <span class="product__name">Controle XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
-            </div>
-          </section>
-        </section>
-        <section class="section-products__content">
-          <header class="section-products__header">
-            <h3 class="section-products__title">Diversos</h3>
-            <a class="section-products__link" href="#">
+            </div> -->
+          </div>
+        </div>
+        <div class="products__content">
+          <header class="products__header">
+            <h3 class="products__title">Diversos</h3>
+            <a class="products__link" href="#">
               Ver tudo
-              <img class="icon--width" src="./assets/svgs/arrow-right-solid.svg" alt="ícone de seta para direita">
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
-          <section class="section-products__featured">
+          <div class="products__list">
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-09.jpg" alt="Produto">
               <span class="product__name">Camisa Atari</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-10.jpg" alt="Produto">
               <span class="product__name">Camisa SNES</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
             <div class="product">
               <img class="product__image" src="./assets/imgs/product-11.jpg" alt="Produto">
               <span class="product__name">Action Figure XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
             </div>
-            <div class="product">
+            <!-- <div class="product">
               <img class="product__image" src="./assets/imgs/product-12.jpg" alt="Produto">
               <span class="product__name">Produto XYZ</span>
-              <span class="product__value"><sup class="product__value--size">R$</sup>60<sup
-                  class="product__value--size">00</sup></span>
+              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                  class="product__price--size">00</sup></span>
               <a class="product__link" href="#">Ver produto</a>
-            </div>
-          </section>
-        </section>
+            </div> -->
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-info">
-        <img class="footer-info__logo" src="./assets/svgs/logo-footer.svg" alt="logo alurageek.">
-        <nav class="footer-info__nav">
-          <ul class="footer-info__list">
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Quem somos nós</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Política de privacidade</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Programa fidelidade</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Nossas lojas</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Quero ser franqueado</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Anuncie aqui</a></li>
-          </ul>
-        </nav>
+  <footer>
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="#home">
+          <img class="logo--width" src="./assets/svgs/logo.svg" alt="logo alurageek.">
+        </a>
       </div>
-      <form class="message-form" action="">
+      <form class="message-form">
         <fieldset class="message-form__fieldset">
           <legend class="message-form__legend">Fale conosco</legend>
           <label class="message-form__label" for="user-name">
@@ -201,6 +198,32 @@
           <button class="message-form__button" type="submit">Enviar mensagem</button>
         </fieldset>
       </form>
+      <!-- <div class="about">
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Quem somos nós</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Política de privacidade</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Programa fidelidade</a>
+          </span>
+        </div>
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Nossas lojas</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Quero ser franqueado</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Anuncie aqui</a>
+          </span>
+        </div>
+        <span class="copyright">&copy; 2022 AluraGeek, by <a class="copyright__link" href="https://github.com/JoaoPdr3"
+            target="_blank">JoaoPdr3</a></span>
+      </div> -->
     </div>
   </footer>
 </body>
