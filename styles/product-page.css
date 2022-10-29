@@ -1,0 +1,47 @@
+body {
+  background-color: #F4FFFD;
+}
+
+.product-description {
+  margin-top: 2rem;
+}
+
+.product-description__banner {
+  height: 15.625rem;
+  width: 23rem;
+  margin: 0 auto 1rem auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-description__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: calc(22rem/16);
+  color: #776483;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #292643;
+}
+
+.product-price--size {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product-info {
+  font-weight: 500;
+  color: #776483;
+}
