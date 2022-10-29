@@ -55,21 +55,33 @@ h6 {
 
 /* || Sitewide */
 .page {
-  width: min(31.25rem, 100%);
-  margin-inline: auto;
+  background-color: #f042652f;
 }
 
 .page * {
   font-family: 'Nunito', sans-serif;
 }
 
+.wrapper {
+  width: min(31.25rem, 100%);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: #011936;
+  width: 100%;
+  padding: 1rem 0;
   /* *bg-primary */
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-container {
@@ -205,13 +217,7 @@ body.menu-expanded .menu-close {
   color: #F04265;
 }
 
-.main {
-  background-color: hsla(206, 17%, 92%, 0.219);
-}
-
-.footer {
-  background-color: hsla(213, 96%, 10%, 0.397);
-}
+.footer {}
 
 .footer-container {
   padding: 1rem;
@@ -464,16 +470,13 @@ body.menu-expanded .menu-close {
 }
 
 .product__value {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
-  display: flex;
-  gap: .0625rem;
+  font-size: 1.4rem;
   color: #000000d8;
   font-weight: 700;
 }
 
 .product__value--size {
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 500;
 }
 
@@ -482,11 +485,16 @@ body.menu-expanded .menu-close {
   text-decoration: none;
   color: #000000d8;
   background-color: #c2f95c;
-  width: 6.25rem;
+  display: block;
   text-align: center;
   padding: .125rem .4rem;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
   font-weight: 700;
   margin-top: .625rem;
+  transition: .4s;
+}
+
+.product__link:hover {
+  transform: scale(1.1);
 }
