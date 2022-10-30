@@ -7,6 +7,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 *::before,
@@ -110,7 +111,6 @@ footer .logo-container {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  /* ? color: hsl(169, 100%, 98%); *color-primary */
 }
 
 .menu-open i,
@@ -142,7 +142,6 @@ body.menu-expanded .menu-close {
   visibility: visible;
 }
 
-
 body.menu-expanded .menu-container {
   position: absolute;
   top: 0;
@@ -155,26 +154,6 @@ body.menu-expanded .menu-container {
   overflow: auto;
   box-shadow: 0px 0px 6px #00000059;
 }
-
-/* @media screen and (max-width: 425px) {
-  body.menu-expanded .menu-container {
-    margin-left: 6.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body.menu-expanded .menu-container {
-    max-width: 230px;
-    margin-left: 6.5rem;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  body.menu-expanded .menu-container {
-    max-width: 220px;
-    margin-left: 3.7rem;
-  }
-} */
 
 body.menu-expanded .menu-close {
   position: relative;
@@ -301,7 +280,7 @@ body.menu-expanded .menu-close {
   border: none;
   padding: 0.625rem 0.75rem;
   border-radius: 3px;
-  width: 50%;
+  width: 60%;
   transition: background .4s;
 }
 
@@ -327,6 +306,13 @@ body.menu-expanded .menu-close {
   display: block;
   width: 150px;
   font-size: .8rem;
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 425px) {
+  .about-info {
+    width: 90px;
+  }
 }
 
 .about-info__link {
@@ -399,7 +385,7 @@ body.menu-expanded .menu-close {
 
 .banner-highlight__btn {
   display: block;
-  width: 6.25rem;
+  width: 8.25rem;
   padding: .625rem .75rem;
   background-color: #292643;
   border-radius: 3px;
@@ -458,7 +444,7 @@ body.menu-expanded .menu-close {
 .product {
   display: flex;
   flex-direction: column;
-  width: 9.75rem;
+  width: 9.08rem;
 }
 
 .product__image {

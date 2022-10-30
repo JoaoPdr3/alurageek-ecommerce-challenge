@@ -8,7 +8,7 @@ body {
 
 .product-description__banner {
   height: 15.625rem;
-  width: 23rem;
+  width: 100%;
   margin: 0 auto 1rem auto;
 }
 
