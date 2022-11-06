@@ -25,21 +25,38 @@
         </a>
       </div>
       <div class="menu-container">
-        <div class="menu-container__content">
-          <div class="menu-login">
-            <a class="menu-login__btn" href="./pages/login-page.html">Faça seu login</a>
-            <h3 class="menu-login__info">
-              Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
-            </h3>
-          </div>
-          <!-- !Test -->
-          <a href="./pages/product-page.html">Ver Produto</a>
-        </div>
+        <ul class="menu-container__content">
+          <li class="menu-container__title">Destaques</li>
+          <li class="menu-container__item">Categorias em ofertas</li>
+          <li class="menu-container__item">Cupons disponíveis</li>
+          <li class="menu-container__item">Produtos em alta</li>
+          <li class="menu-container--line"></li>
+          <li class="menu-container__title">Categorias</li>
+          <li class="menu-container__item">Actions Figures</li>
+          <li class="menu-container__item">Consoles</li>
+          <li class="menu-container__item">Cosplayers</li>
+          <li class="menu-container__item">Camisas</li>
+          <li class="menu-container__item">Canecas</li>
+          <li class="menu-container__item">Headsets</li>
+          <li class="menu-container__item">Livros</li>
+          <li class="menu-container__item">Mousepads</li>
+          <li class="menu-container__item">Teclados</li>
+          <li class="menu-container__item">HQs</li>
+          <li class="menu-container__item">Mangás</li>
+          <li class="menu-container__item">Ver todas Categorias</li>
+          <li class="menu-container--line"></li>
+          <li class="menu-container__title">Ajuda e Configurações</li>
+          <li class="menu-container__item">Sua conta</li>
+          <li class="menu-container__item">Ajuda</li>
+          <li class="menu-container__item">Fazer login</li>
+        </ul>
       </div>
-      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
+      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu"
+        onclick="openMenu()">
         <i class="fa-solid fa-bars fa-lg"></i>
       </button>
-      <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
+      <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" title="Fechar menu"
+        onclick="closeMenu()">
         <i class="fa-solid fa-xmark fa-lg"></i>
       </button>
     </div>
@@ -62,7 +79,7 @@
           <header class="products__header">
             <h3 class="products__title">Destaques</h3>
             <a class="products__link" href="#">
-              Ver tudo
+              Ver Categoria
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
@@ -101,7 +118,7 @@
           <header class="products__header">
             <h3 class="products__title">Consoles</h3>
             <a class="products__link" href="#">
-              Ver tudo
+              Ver Categoria
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
@@ -140,7 +157,7 @@
           <header class="products__header">
             <h3 class="products__title">Diversos</h3>
             <a class="products__link" href="#">
-              Ver tudo
+              Ver Categoria
               <i class="fa-solid fa-arrow-right"></i>
             </a>
           </header>
