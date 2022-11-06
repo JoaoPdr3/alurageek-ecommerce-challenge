@@ -147,10 +147,13 @@ body.menu-expanded::before {
 }
 
 body.menu-expanded .close {
-  position: relative;
   display: flex;
   justify-content: end;
-  padding: 1rem;
+  padding: 1rem 1rem 0 0;
+}
+
+body.menu-expanded .menu-close {
+  position: relative;
 }
 
 body.menu-expanded .menu-open,
@@ -183,7 +186,10 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 
 .menu-container__content {
   list-style: none;
-  padding-top: 1.3rem;
+}
+
+.menu-container__content a {
+  text-decoration: none;
 }
 
 .menu-container__title {
@@ -196,11 +202,15 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 .menu-container__item {
   padding: 0.625rem 2rem;
   transition: background .2s;
-  color: #292643;
+  color: #44426E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-container__item:hover {
   background-color: #BBAAB85B;
+  color: #292643;
   font-weight: 500;
 }
 
@@ -297,7 +307,6 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 }
 
 .message-form__button:hover {
-  background-color: #C48461;
   background-color: #776483;
 }
 
@@ -373,26 +382,24 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
   height: 100%;
 }
 
-.banner-highlight__container .wrapper {
-  height: 100%;
-}
-
 .banner-highlight__content {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: #77648350;
+  padding-inline: 1rem;
 }
 
 .banner-highlight__title {
   letter-spacing: .25rem;
   font-size: 2rem;
-  color: #292643;
+  color: #F4FFFD;
 }
 
 .banner-highlight__info {
   font-weight: 500;
-  color: #292643;
+  color: #F4FFFD;
   margin-bottom: .5rem;
 }
 
@@ -402,7 +409,7 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
   padding: .625rem .75rem;
   background-color: #292643;
   border-radius: 3px;
-  color: #E99E75;
+  color: #F4FFFD;
   text-decoration: none;
   text-align: center;
   transition: background .3s;
