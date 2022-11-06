@@ -1,10 +1,18 @@
 /* || Login Page */
 body {
-  background-color: #D6C7D2;
+  background-color: #CCB9C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body * {
-  background-color: #D6C7D2;
+  background-color: #CCB9C7;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 main .wrapper {
@@ -12,17 +20,6 @@ main .wrapper {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-.menu-open,
-.menu-close {
-  background-color: #292643;
-}
-
-.menu-open i,
-.menu-close i {
-  color: #776483;
-  background-color: #292643;
 }
 
 /* || Form Login */
@@ -33,9 +30,7 @@ main .wrapper {
 }
 
 .form {
-  border: 1px solid #776483;
-  border-radius: 4px;
-  padding: 1.5rem;
+  padding-inline: .5rem;
 }
 
 .form__fieldset {
@@ -46,108 +41,110 @@ main .wrapper {
 
 .form__legend {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #292643;
-  margin-bottom: 1rem;
 }
 
 .form__label {
-  font-size: .875rem;
-  font-weight: 700;
-  color: #44426E;
-  margin-bottom: 2px;
+  height: 0.375rem;
 }
 
 .form__input {
-  margin-bottom: .75rem;
-  padding: 4px 7px;
-  height: 30px;
-  font-size: .875rem;
-  border-radius: 2px;
-  border: 1px solid #776483;
-  background-color: #D6C7D2;
   color: #292643;
+  background-color: #F4FFFD;
+  outline: none;
+  padding: .375rem 2.5rem;
+  border: none;
+  margin-top: .2rem;
 }
 
 .form__input--submit {
-  color: #292643;
-  border-radius: 2px;
-  border: 1px solid #44426E;
-  margin-top: .2rem;
-  padding: .3rem .3rem;
-  font-size: .875rem;
-  background: linear-gradient(180deg, #BBAAB8 0%, #BBAAB8 40%, #776483 100%);
+  cursor: pointer;
+  background-color: #292643;
+  color: #BBAAB8;
+  border: none;
+  padding: .375rem 2.5rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+  transition: background .4s;
 }
 
 .form__input--submit:hover {
-  background: linear-gradient(180deg, #AD9EAB 0%, #AD9EAB 40%, #6B5A75 100%);
+  background-color: #44426E;
 }
 
-.divider-line {
+.form__input#user-email-login {
+  background-image: url('../assets/svgs/user-solid.svg');
+  background-position: 13px 9px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+.form__input#user-password-login {
+  background-image: url('../assets/svgs/lock-solid.svg');
+  background-position: 13px 9px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+.form__input:focus {
+  background-color: #E4DDE2;
+  border-bottom: 3px solid #776483;
+}
+
+.form__input::placeholder {
+  color: #292643;
+}
+
+.separator {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: .3rem;
+  margin-bottom: .7rem;
   display: flex;
   justify-content: center;
 }
 
-.divider-line::before {
+.separator::before {
   content: "";
   position: absolute;
   width: 100%;
-  border-top: 1px solid #BBAAB8;
+  border-top: 1px solid #AC99A8;
   top: 9px;
   z-index: 1;
 }
 
-.divider-line__title {
+.separator__info {
   position: relative;
   display: inline-block;
-  color: #6B5A75;
+  color: #453C4B;
   font-weight: 400;
   font-size: .8125rem;
-  background-color: #D6C7D2;
-  padding: 0 8px;
+  background-color: #CCB9C7;
+  padding: 0 .8rem;
   z-index: 2;
 }
 
 .create-account-container {
   width: 80%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .create-account-container__btn {
-  display: block;
-  border: 1px solid #A1A1A1;
-  border-radius: 2px;
-  padding: .3rem .3rem;
-  text-align: center;
-  width: 100%;
   text-decoration: none;
+  background-color: #D8D8D8;
   color: #292643;
-  font-size: .875rem;
-  background: linear-gradient(180deg, #F0F0F0 0%, #F0F0F0 40%, #DEDEDE 100%);
+  border: none;
+  padding: .42rem 4rem;
+  border-radius: 3px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: background .4s;
 }
 
 .create-account-container__btn:hover {
   background: #E4E4E4;
-}
-
-.divider-line-final {
-  width: 100%;
-  height: 3px;
-  margin-bottom: 1.8rem;
-  background: linear-gradient(90deg, #FFFFFF00 0%, #77648375 50%, #77648375 50%, #FFFFFF00 100%);
-}
-
-/* || Focus elements Login Page */
-.form__input:focus,
-.form__input--submit:focus,
-.create-account-container__btn:focus {
-  outline: none;
-  border-color: #292643;
-  box-shadow: 0px 0px 5px #292643;
 }
 
 /* || Edit Footer */
