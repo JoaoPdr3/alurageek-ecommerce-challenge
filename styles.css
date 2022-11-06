@@ -7,7 +7,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 *::before,
@@ -170,6 +170,22 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 @media (max-width: 425px) {
   body.menu-expanded .menu-container {
     left: 29%;
+  }
+
+  body.menu-expanded .menu-close {
+    right: 278px;
+  }
+}
+
+@media (max-width: 375px) {
+  body.menu-expanded .menu-close {
+    right: 242px;
+  }
+}
+
+@media (max-width: 320px) {
+  body.menu-expanded .menu-close {
+    right: 203px;
   }
 }
 
