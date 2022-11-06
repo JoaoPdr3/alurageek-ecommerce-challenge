@@ -137,10 +137,14 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-body.menu-expanded header {
-  position: relative;
+body.menu-expanded::before {
+  content: "";
+  background-color: #292643A2;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
 }
-
 
 body.menu-expanded .close {
   position: relative;
@@ -168,10 +172,9 @@ body.menu-expanded .menu-container {
   left: 0;
   right: 30%;
   background-color: #F4FFFD;
-  height: 615px;
+  height: 100%;
   overflow: auto;
   z-index: 2;
-  box-shadow: 0px 0px 500px #000000;
 }
 
 body.menu-expanded .menu-container::-webkit-scrollbar {
@@ -202,7 +205,7 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 }
 
 .menu-container--line {
-  background-color: #7764834f;
+  background-color: #7764834F;
   height: 1px;
   width: 90%;
   margin-inline: auto;
