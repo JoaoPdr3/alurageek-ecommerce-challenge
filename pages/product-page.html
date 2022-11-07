@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../styles/product-page.css">
   <!--*Scripts*-->
   <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
 </head>
 
 <body>
@@ -25,20 +26,122 @@
         </a>
       </div>
       <div class="menu-container">
-        <div class="menu-container__content">
-          <div class="menu-login">
-            <a class="menu-login__btn" href="../pages/login-page.html">Faça seu login</a>
-            <h3 class="menu-login__info">
-              Não possui uma conta? <a class="info-link" href="#">Criar conta</a>
-            </h3>
-          </div>
+        <div class="close">
+          <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" title="Fechar menu"
+            onclick="closeMenu()">
+            <i class="fa-solid fa-xmark fa-lg"></i>
+          </button>
         </div>
+        <ul class="menu-container__content">
+          <li class="menu-container__title">Destaques</li>
+          <li class="menu-container__item">
+            <a href="#">
+              Categorias em ofertas
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Cupons disponíveis
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Produtos em alta
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container--line"></li>
+          <li class="menu-container__title">Categorias</li>
+          <li class="menu-container__item">
+            <a href="#">
+              Actions Figures
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Consoles
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Cosplayers
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Camisas
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Canecas
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Headsets
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Livros
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Mousepads
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Teclados
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              HQs
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Mangás
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">
+              Ver todas Categorias
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="menu-container--line"></li>
+          <li class="menu-container__title">Ajuda e Configurações</li>
+          <li class="menu-container__item">
+            <a href="#">Sua conta</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="#">Ajuda</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="../pages/login-page.html">Fazer login</a>
+          </li>
+        </ul>
       </div>
-      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()">
+      <button class="menu-open" type="button" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu"
+        onclick="openMenu()">
         <i class="fa-solid fa-bars fa-lg"></i>
-      </button>
-      <button class="menu-close" type="button" aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()">
-        <i class="fa-solid fa-xmark fa-lg"></i>
       </button>
     </div>
   </header>
