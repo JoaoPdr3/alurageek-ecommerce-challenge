@@ -48,15 +48,9 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* || Variables */
-:root {
-  /* #E99E75 #44426E #776483 #BBAAB8 #292643 */
-  /* ? Thinking what to put */
-}
-
 /* || Sitewide */
 body {
-  background-color: #B6A4B2;
+  background-color: #F4FFFD;
 }
 
 body * {
@@ -70,7 +64,6 @@ header {
   background-color: #292643;
   width: 100%;
   padding: 1rem 0;
-  /* *bg-primary */
 }
 
 header .wrapper {
@@ -154,6 +147,8 @@ body.menu-expanded .close {
 
 body.menu-expanded .menu-close {
   position: relative;
+  animation: appear .3s backwards;
+  animation-delay: .3s;
 }
 
 body.menu-expanded .menu-open,
@@ -173,15 +168,40 @@ body.menu-expanded .menu-container {
   position: absolute;
   top: 0;
   left: 0;
-  right: 30%;
+  right: 0;
   background-color: #F4FFFD;
   height: 100%;
+  max-width: 320px;
+  margin-right: 1.5rem;
   overflow: auto;
   z-index: 2;
+  opacity: 0;
+  animation: sideTransition .3s forwards;
 }
 
 body.menu-expanded .menu-container::-webkit-scrollbar {
   width: 0;
+}
+
+@keyframes sideTransition {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu-container__content {
@@ -190,6 +210,10 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 
 .menu-container__content a {
   text-decoration: none;
+  color: #44426E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-container__title {
@@ -202,10 +226,6 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 .menu-container__item {
   padding: 0.625rem 2rem;
   transition: background .2s;
-  color: #44426E;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menu-container__item:hover {
@@ -388,7 +408,6 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
   flex-direction: column;
   justify-content: flex-end;
   background-color: #77648350;
-  padding-inline: 1rem;
 }
 
 .banner-highlight__title {
@@ -422,7 +441,6 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
 
 .products {
   padding: 2rem 0;
-  background-color: #F4FFFD;
 }
 
 .products__content {
