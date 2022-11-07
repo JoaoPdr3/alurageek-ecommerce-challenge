@@ -1,0 +1,46 @@
+.form__label {
+  height: auto;
+  margin-top: .5rem;
+  font-weight: 600;
+  color: #292643;
+}
+
+.form__input {
+  color: #292643;
+  background-color: #F4FFFD;
+  outline: none;
+  padding: .375rem .6rem;
+  border: none;
+  margin-top: .2rem;
+}
+
+.form__input::placeholder {
+  color: #292643C5;
+}
+
+.form__alert {
+  color: #292643;
+  font-weight: 500;
+  font-size: .875rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  margin-top: .4rem;
+}
+
+.login-content {
+  margin-bottom: 2rem;
+  color: #292643;
+}
+
+.login-content a {
+  color: #292643;
+  text-decoration: none;
+}
+
+.login-content a:hover,
+.login-content a:active {
+  color: #44426E;
+  text-decoration: underline;
+}

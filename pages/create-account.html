@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+  <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro na AluraGeek</title>
+<!--*Fonts*-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--*Styles*-->
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles/login-page.css">
+<link rel="stylesheet" href="../styles/create-account.css">
+<!--*Scripts*-->
+<script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img class="logo--width" src="../assets/svgs/logo-alternative.svg" alt="logo alurageek">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="login-container">
+        <form class="form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Criar conta</legend>
+            <label class="form__label" for="user-name-createAcc">
+              Seu nome
+            </label>
+            <input class="form__input" type="text" id="user-name-createAcc" placeholder="Nome e sobrenome">
+            <label class="form__label" for="user-email-createAcc">
+              Número de celular ou e-mail
+            </label>
+            <input class="form__input" type="text" id="user-email-createAcc">
+            <label class="form__label" for="user-password-createAcc">
+              Senha
+            </label>
+            <input class="form__input" type="password" id="user-password-createAcc"
+              placeholder="Pelo menos 6 caracteres">
+            <span class="form__alert">
+              <i class="fa-solid fa-circle-info"></i>
+              As senhas devem ter pelo menos 6 caracteres.
+            </span>
+            <label class="form__label" for="user-repeatPassword-createAcc">
+              Insira a senha nova mais uma vez
+            </label>
+            <input class="form__input" type="password" id="user-repeatPassword-createAcc">
+            <input class="form__input--submit" type="submit" value="Continuar">
+          </fieldset>
+        </form>
+      </div>
+      <div class="login-content">
+        Você já possui uma conta?
+        <a href="./login-page.html">
+          Fazer login
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+      </div>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <div class="about">
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Quem somos nós</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Política de privacidade</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Programa fidelidade</a>
+          </span>
+        </div>
+        <div class="about__container">
+          <span class="about-info">
+            <a class="about-info__link" href="">Nossas lojas</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Quero ser franqueado</a>
+          </span>
+          <span class="about-info">
+            <a class="about-info__link" href="">Anuncie aqui</a>
+          </span>
+        </div>
+        <span class="copyright">&copy; 2022 AluraGeek, by <a class="copyright__link" href="https://github.com/JoaoPdr3"
+            target="_blank">JoaoPdr3</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
