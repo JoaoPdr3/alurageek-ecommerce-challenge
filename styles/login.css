@@ -1,4 +1,5 @@
-/* || Login Page */
+@import url(./main.css);
+
 body {
   background-color: #CCB9C7;
   display: flex;
@@ -22,57 +23,7 @@ main .wrapper {
   justify-content: center;
 }
 
-/* || Form Login */
-.login-container {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.form {
-  padding-inline: .5rem;
-}
-
-.form__fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.form__legend {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #292643;
-}
-
-.form__label {
-  height: 0.375rem;
-}
-
-.form__input {
-  color: #292643;
-  background-color: #F4FFFD;
-  outline: none;
-  padding: .375rem 2.5rem;
-  border: none;
-  margin-top: .2rem;
-}
-
-.form__input--submit {
-  cursor: pointer;
-  background-color: #292643;
-  color: #BBAAB8;
-  border: none;
-  padding: .375rem 2.5rem;
-  border-radius: 3px;
-  margin-top: 1rem;
-  transition: background .4s;
-}
-
-.form__input--submit:hover {
-  background-color: #44426E;
-}
-
+/* || Edit Form */
 .form__input#user-email-login {
   background-image: url('../assets/svgs/user-solid.svg');
   background-position: 13px 9px;
@@ -87,13 +38,10 @@ main .wrapper {
   background-size: 14px;
 }
 
-.form__input:focus {
-  background-color: #E4DDE2;
-  border-bottom: 3px solid #776483;
-}
-
-.form__input::placeholder {
-  color: #292643;
+.container {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .separator {
@@ -147,7 +95,7 @@ main .wrapper {
   background: #E4E4E4;
 }
 
-/* || Edit Footer */
+/* || Edit About Footer */
 .about-info__link {
   color: #292643;
 }
