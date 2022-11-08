@@ -1,3 +1,30 @@
+@import url(./main.css);
+
+body {
+  background-color: #CCB9C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body * {
+  background-color: #CCB9C7;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main .wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* || Edit Form */
+
 .form__label {
   height: auto;
   margin-top: .5rem;
@@ -29,6 +56,12 @@
   margin-top: .4rem;
 }
 
+.container {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .login-content {
   margin-bottom: 2rem;
   color: #292643;
@@ -43,4 +76,27 @@
 .login-content a:active {
   color: #44426E;
   text-decoration: underline;
+}
+
+/* || Edit About Footer */
+.about-info__link {
+  color: #292643;
+}
+
+.about-info__link:hover,
+.about-info__link:active {
+  color: #44426E;
+}
+
+.copyright {
+  color: #44426E;
+}
+
+.copyright__link {
+  color: #44426E;
+}
+
+.copyright__link:hover,
+.copyright__link:active {
+  color: #292643;
 }
