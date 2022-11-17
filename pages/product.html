@@ -9,11 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--*Swiper*-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!--*Styles*-->
   <link rel="stylesheet" href="../styles/product.css">
   <!--*Scripts*-->
   <script src="https://kit.fontawesome.com/c5df87a38b.js" crossorigin="anonymous"></script>
-  <script src="../main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../main.js" defer></script>
 </head>
 
 <body>
@@ -168,35 +171,37 @@
           <header class="products__header">
             <h3 class="products__title">Produtos similares</h3>
           </header>
-          <div class="products__list">
-            <div class="product">
-              <img class="product__image" src="../assets/imgs/product-01.jpg" alt="Produto">
-              <span class="product__name">Produto XYZ</span>
-              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
-                  class="product__price--size">00</sup></span>
-              <a class="product__link" href="#">Ver produto</a>
+          <div class="products__list swiper">
+            <div class="swiper-wrapper">
+              <div class="product swiper-slide">
+                <img class="product__image" src="../assets/imgs/product-01.jpg" alt="Produto">
+                <span class="product__name">Produto XYZ</span>
+                <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                    class="product__price--size">00</sup></span>
+                <a class="product__link" href="#">Ver produto</a>
+              </div>
+              <div class="product swiper-slide">
+                <img class="product__image" src="../assets/imgs/product-02.jpg" alt="Produto">
+                <span class="product__name">Produto XYZ</span>
+                <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                    class="product__price--size">00</sup></span>
+                <a class="product__link" href="#">Ver produto</a>
+              </div>
+              <div class="product swiper-slide">
+                <img class="product__image" src="../assets/imgs/product-03.jpg" alt="Produto">
+                <span class="product__name">Produto XYZ</span>
+                <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                    class="product__price--size">00</sup></span>
+                <a class="product__link" href="#">Ver produto</a>
+              </div>
+              <div class="product swiper-slide">
+                <img class="product__image" src="../assets/imgs/product-04.jpg" alt="Produto">
+                <span class="product__name">Produto XYZ</span>
+                <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
+                    class="product__price--size">00</sup></span>
+                <a class="product__link" href="#">Ver produto</a>
+              </div>
             </div>
-            <div class="product">
-              <img class="product__image" src="../assets/imgs/product-02.jpg" alt="Produto">
-              <span class="product__name">Produto XYZ</span>
-              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
-                  class="product__price--size">00</sup></span>
-              <a class="product__link" href="#">Ver produto</a>
-            </div>
-            <div class="product">
-              <img class="product__image" src="../assets/imgs/product-03.jpg" alt="Produto">
-              <span class="product__name">Produto XYZ</span>
-              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
-                  class="product__price--size">00</sup></span>
-              <a class="product__link" href="#">Ver produto</a>
-            </div>
-            <!-- <div class="product">
-              <img class="product__image" src="../assets/imgs/product-04.jpg" alt="Produto">
-              <span class="product__name">Produto XYZ</span>
-              <span class="product__price"><sup class="product__price--size">R$</sup>60<sup
-                  class="product__price--size">00</sup></span>
-              <a class="product__link" href="#">Ver produto</a>
-            </div> -->
           </div>
         </div>
       </div>
