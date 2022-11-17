@@ -531,3 +531,10 @@ body.menu-expanded .menu-container::-webkit-scrollbar {
     width: 90px;
   }
 }
+
+/* || Swiper */
+.swiper-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
