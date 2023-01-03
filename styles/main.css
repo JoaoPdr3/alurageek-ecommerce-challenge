@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./responsive.css);
 
 body {
   background-color: #F4FFFD;
